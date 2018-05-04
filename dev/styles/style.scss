@@ -52,23 +52,15 @@ h1 {
 
 .titleBack {
   background: transparent;
-  transform:rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
 }
 
 .titleRotateContainer:hover .titleBack {
-  transform:rotateY(0);
+  -webkit-transform:rotateY(0);
 }
 
 .titleRotateContainer:hover .titleFront {
-  transform:rotateY(-180deg);
-}
-
-.titleRotateContainer:focus .titleBack {
-  transform:rotateY(0);
-}
-
-.titleRotateContainer:focus .titleFront {
-  transform:rotateY(-180deg);
+  -webkit-transform:rotateY(-180deg);
 }
 
 .titleFront {
