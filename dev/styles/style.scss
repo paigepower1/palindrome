@@ -63,6 +63,14 @@ h1 {
   transform:rotateY(-180deg);
 }
 
+.titleRotateContainer:focus .titleBack {
+  transform:rotateY(0);
+}
+
+.titleRotateContainer:focus .titleFront {
+  transform:rotateY(-180deg);
+}
+
 .titleFront {
   font-size: 40px;
   padding-top: 15px;
