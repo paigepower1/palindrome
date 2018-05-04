@@ -1,14 +1,14 @@
-@import 'components/normalize';
 @import 'components/base';
+@import 'components/normalize';
 @import 'components/typography';
 
 
-// CENTERING STYLES WITH FLEXBOX
-
+// ******* BASIC STYLES ******
 body {
 	font-family: $bodyFont;
 }
 
+// ********* CENTERING STYLES WITH FLEXBOX *******
 .wrapper {
 	max-width: 1080px;
 	width: 90%;
@@ -17,23 +17,88 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	// height: 600px;
 }
 
-// TITLE STYLES
+// ******* TITLE STYLES ********
 h1 {
 	font-size: 45px;
 	font-family: $titleFont;
 }
 
-// INPUT TEXT BOX STYLES
-.palindromeTextBox {
+// ******** TITLE ROTATE ANIMATION AND RESPONSIVE ********
+.titleRotateContainer {
+  width: 450px;
+  height: 100px;
+  position: relative;
+  perspective: 800px;
+  margin: 0 auto;
+  @media screen and (max-width: 500px) {
+	width: 300px;
+	margin-bottom: 20px;
+  }
+}
 
+.titleFront, .titleBack {
+  position: absolute;
+  height:100%;
+  width:100%;
+  transition:all 0.5s;
+  backface-visibility:hidden;  
+}
+
+.titleFront {
+  background:transparent;
+}
+
+.titleBack {
+  background: transparent;
+  transform:rotateY(180deg);
+}
+
+.titleRotateContainer:hover .titleBack {
+  transform:rotateY(0);
+}
+
+.titleRotateContainer:hover .titleFront {
+  transform:rotateY(-180deg);
+}
+
+.titleFront {
+  font-size: 40px;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  display: block;
+  align-content: center;
+  @media screen and (max-width: 500px) {
+	font-size: 35px;
+  }
+}
+
+.titleBack {
+  font-size: 40px;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  display: block;
+  align-content: center;
+  @media screen and (max-width: 500px) {
+	font-size: 35px;
+  }
+}
+
+
+// ******* INPUT TEXT BOX STYLES ******
+.palindromeTextBox {
+	width: 277px;
+	height: 52px;
 }
 
 
 
-// CHECK PALINDROME BUTTON STYLES
+// ******* CHECK PALINDROME BUTTON STYLES ********
 .checkPalindromeBtn {
 	padding: 16px 65px;
 	background: $buttonColor;

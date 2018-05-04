@@ -3,7 +3,7 @@
 // vanilla JS palindrome checker
 
 // pseudo code 
-// allow user to type any palindrome
+// allow user to type any words, symbols or numbers and check if it is a palindrome
 // user clicks button to test if it is a palindrome
 // alert user if they are successful or unsuccessful in creating a palindrome
 
@@ -19,15 +19,16 @@ function isPalindrome(string) {
     return string === reversedString;
 }
 
+// on click run function to check if user input is palindrome
 checkButton.addEventListener("click", function () {
     var value = document.getElementById("inputPalindrome").value;
     var notification = document.getElementById("notification");
 
     if (isPalindrome(value)) {
-        notification.innerHTML = "It's a palindrome!";
-        notification.className = "alert alert-success";
+        notification.innerHTML = "👍 It's a palindrome! Great job! 👍";
+        notification.className = "alert alertSuccess";
     } else {
-        notification.innerHTML = "That's not a palindrome!";
-        notification.className = "alert alert-danger";
+        notification.innerHTML = "👎 That's not a palindrome! Try again! 👎";
+        notification.className = "alert alertDanger";
     }
 });

@@ -550,6 +550,73 @@ h1 {
   font-size: 45px;
   font-family: "Permanent Marker", cursive; }
 
+.titleRotateContainer {
+  width: 450px;
+  height: 100px;
+  position: relative;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  margin: 0 auto; }
+  @media screen and (max-width: 500px) {
+    .titleRotateContainer {
+      width: 300px;
+      margin-bottom: 20px; } }
+
+.titleFront, .titleBack {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+.titleFront {
+  background: transparent; }
+
+.titleBack {
+  background: transparent;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+.titleRotateContainer:hover .titleBack {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0); }
+
+.titleRotateContainer:hover .titleFront {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg); }
+
+.titleFront {
+  font-size: 40px;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  @media screen and (max-width: 500px) {
+    .titleFront {
+      font-size: 35px; } }
+
+.titleBack {
+  font-size: 40px;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  @media screen and (max-width: 500px) {
+    .titleBack {
+      font-size: 35px; } }
+
+.palindromeTextBox {
+  width: 277px;
+  height: 52px; }
+
 .checkPalindromeBtn {
   padding: 16px 65px;
   background: #1E90FF;
