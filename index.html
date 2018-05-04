@@ -4,13 +4,36 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>HTML/CSS/JS Boilerplate</title>
+	<title>Palindrome checker</title>
 	<link rel="stylesheet" href="./public/styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto" rel="stylesheet">
+
 </head>
 <body>
 
-	<h1>HTML/CSS/JS Boilerplate</h1>
-	<p>Let's code!</p>
+	<!-- main -->
+	<main class="wrapper">
+		<!-- title -->
+		<div class="mainContainer">
+			<h1 class="text-center">Palindrome Checker</h1>
+		</div>
+		<!-- input text box -->
+		<div class="mainContainer">
+			<div class="palindromeTextBoxContainer">
+				<textarea class="palindromeTextBox" id="inputPalindrome">Borrow or rob?</textarea>
+			</div>
+			<!-- check palindrome button -->
+			<div class="btnContainer">
+				<button id="checkPalindrome" class="checkPalindromeBtn" type="submit">Check palindrome</button>
+			</div>
+		</div>
+		<!-- alert notification -->
+		<div class="mainContainer">
+			<div class="alertContainer">
+				<div id="notification" class="alert alert-info">Palindrome has not been checked yet</div>
+			</div>
+		</div>
+	</main>
 
 	<script src="public/scripts/main.js"></script>
 </body>

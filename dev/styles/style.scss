@@ -2,11 +2,54 @@
 @import 'components/base';
 @import 'components/typography';
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
+
+// CENTERING STYLES WITH FLEXBOX
+
+body {
+	font-family: $bodyFont;
 }
 
-* {
-	outline: 1px solid red;
+.wrapper {
+	max-width: 1080px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	// height: 600px;
+}
+
+// TITLE STYLES
+h1 {
+	font-size: 45px;
+	font-family: $titleFont;
+}
+
+// INPUT TEXT BOX STYLES
+.palindromeTextBox {
+
+}
+
+
+
+// CHECK PALINDROME BUTTON STYLES
+.checkPalindromeBtn {
+	padding: 16px 65px;
+	background: $buttonColor;
+	color: #FFF;
+	border: none;
+	font-size: 18px;
+}
+
+.checkPalindromeBtn:hover {
+	background: $hoverColor;
+}
+
+.checkPalindromeBtn:focus {
+	background: $hoverColor;
+}
+
+.btnContainer {
+	margin: 20px 0;
 }
