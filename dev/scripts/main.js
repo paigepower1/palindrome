@@ -23,10 +23,10 @@ checkButton.addEventListener("click", function () {
     let notification = document.getElementById("notification");
 
     if (isPalindrome(value)) {
-        notification.innerHTML = "👍 It's a palindrome! Great job! 👍";
+        notification.innerHTML = "👍 It's a palindrome! 👍";
         notification.className = "alert alertSuccess";
     } else {
-        notification.innerHTML = "👎 That's not a palindrome! Try again! 👎";
+        notification.innerHTML = "👎 Not a palindrome! Try again! 👎";
         notification.className = "alert alertDanger";
     }
 });

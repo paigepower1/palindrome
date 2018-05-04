@@ -611,7 +611,8 @@ h1 {
 
 .palindromeTextBox {
   width: 277px;
-  height: 52px; }
+  height: 52px;
+  border: 2px solid #1E90FF; }
 
 .checkPalindromeBtn {
   padding: 16px 65px;
