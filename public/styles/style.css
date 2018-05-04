@@ -567,7 +567,6 @@ h1 {
   height: 100%;
   width: 100%;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
 
@@ -576,16 +575,13 @@ h1 {
 
 .titleBack {
   background: transparent;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
+  -webkit-transform: rotateY(180deg); }
 
 .titleRotateContainer:hover .titleBack {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0); }
+  -webkit-transform: rotateY(0); }
 
 .titleRotateContainer:hover .titleFront {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg); }
+  -webkit-transform: rotateY(-180deg); }
 
 .titleFront {
   font-size: 40px;
