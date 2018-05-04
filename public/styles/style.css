@@ -559,8 +559,8 @@ h1 {
   margin: 0 auto; }
   @media screen and (max-width: 500px) {
     .titleRotateContainer {
-      width: 300px;
-      margin-bottom: 20px; } }
+      width: 312px;
+      margin: 10px 25px; } }
 
 .titleFront, .titleBack {
   position: absolute;
@@ -577,15 +577,15 @@ h1 {
   background: transparent;
   -webkit-transform: rotateY(180deg); }
 
-.titleRotateContainer:hover .titleBack {
+.titleRotateContainer:hover .titleBack, .titleRotateContainer:active {
   -webkit-transform: rotateY(0); }
 
-.titleRotateContainer:hover .titleFront {
+.titleRotateContainer:hover .titleFront, .titleRotateContainer:active {
   -webkit-transform: rotateY(-180deg); }
 
 .titleFront {
   font-size: 40px;
-  padding-top: 15px;
+  padding-top: 25px;
   margin: 0 auto;
   text-align: center;
   color: black;
@@ -598,7 +598,7 @@ h1 {
 
 .titleBack {
   font-size: 40px;
-  padding-top: 15px;
+  padding-top: 25px;
   margin: 0 auto;
   text-align: center;
   color: black;
