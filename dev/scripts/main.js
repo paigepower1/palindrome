@@ -25,12 +25,12 @@ checkButton.addEventListener("click", function () {
 
     // if user input is palindrome, alert them 
     if (isPalindrome(value)) {
-        notification.innerHTML = "👍 It's a palindrome! 👍";
+        notification.innerHTML = "👍";
         notification.className = "alert alertSuccess";
 
-    // else user input is not a palindrome , alert them 
+    // user input is not a palindrome , alert them 
     } else {
-        notification.innerHTML = "👎 Not a palindrome! Try again! 👎";
-        notification.className = "alert alertDanger";
+        notification.innerHTML = "👎";
+        notification.className = "alert alertNoSuccess";
     }
 });

@@ -610,22 +610,38 @@ h1 {
       font-size: 35px; } }
 
 .palindromeTextBox {
-  width: 277px;
+  width: 300px;
   height: 52px;
-  border: 2px solid #1E90FF; }
+  border: 2px solid #8fd3f4;
+  border-radius: 5px; }
 
 .checkPalindromeBtn {
   padding: 16px 65px;
-  background: #1E90FF;
   color: #FFF;
   border: none;
-  font-size: 18px; }
+  font-size: 16px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#84fab0), color-stop(51%, #8fd3f4), to(#84fab0));
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .4px; }
 
 .checkPalindromeBtn:hover {
-  background: #006ad1; }
+  background-position: right center; }
 
 .checkPalindromeBtn:focus {
-  background: #006ad1; }
+  background: #8fd3f4; }
 
 .btnContainer {
   margin: 20px 0; }
+
+.alertSuccess, .alertNoSuccess {
+  font-size: 50px; }

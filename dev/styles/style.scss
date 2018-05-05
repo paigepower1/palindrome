@@ -92,9 +92,10 @@ h1 {
 
 // ******* INPUT TEXT BOX STYLES ******
 .palindromeTextBox {
-	width: 277px;
+	width: 300px;
 	height: 52px;
-	border: 2px solid $buttonColor;
+  border: 2px solid $accentColor;
+  border-radius: 5px;
 }
 
 
@@ -102,20 +103,34 @@ h1 {
 // ******* CHECK PALINDROME BUTTON STYLES ********
 .checkPalindromeBtn {
 	padding: 16px 65px;
-	background: $buttonColor;
 	color: #FFF;
 	border: none;
-	font-size: 18px;
+  font-size: 16px;
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  border-radius: 5px;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .4px;
 }
 
 .checkPalindromeBtn:hover {
-	background: $hoverColor;
+  // background: $hoverColor;
+  background-position: right center;
 }
 
 .checkPalindromeBtn:focus {
-	background: $hoverColor;
+	background: $accentColor;
 }
 
 .btnContainer {
 	margin: 20px 0;
+}
+
+// ******* ALERT STYLES *****
+.alertSuccess, .alertNoSuccess {
+  font-size: 50px;
 }
